@@ -24,13 +24,16 @@ if (!defined('ABSPATH')) {
 
 add_action('widgets_init', 'yasr_init_widgets');
 
+//Always use register widgets if wp_use_widgets_block_editor doesn't exists (WP < 5.8) or if legacy widget page is used
+//This means that old widgets will not work with new widgets.php page
 function yasr_init_widgets() {
-    if(!wp_use_widgets_block_editor()) {
+    if (!function_exists('wp_use_widgets_block_editor') ||
+        (function_exists('wp_use_widgets_block_editor') && !wp_use_widgets_block_editor())
+    ) {
         register_widget('Yasr_Overall_Rating_Widget');
         register_widget('Yasr_Visitor_Votes_Widget');
         register_widget('Yasr_Recent_Ratings_Widget');
     }
-
 }
 
 /**
