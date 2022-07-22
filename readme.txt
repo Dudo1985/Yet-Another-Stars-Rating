@@ -4,7 +4,7 @@ Tags: rating, rate post, star rating, google rating, block
 Requires at least: 4.7
 Contributors: Dudo
 Tested up to: 6.0
-Stable tag: 3.1.0
+Stable tag: 3.1.1
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Boost the way people interact with your site with an easy WordPress stars rating system! With schema.org rich snippets YASR will improve your SEO
@@ -122,7 +122,7 @@ It is the first (and for now only) rating plugin that uses REST API.
 Further, it comes with a lot of hooks, you can find more info [here](https://yetanotherstarsrating.com/docs/developers/) .
 
 == GitHub ==
-* [Follow development on github](https://github.com/Dudo1985/yet-another-stars-rating)
+* [Follow development on GitHub](https://github.com/Dudo1985/yet-another-stars-rating)
 
 == Related Link ==
 * [All available shortcodes in free version](https://yetanotherstarsrating.com/yasr-shortcodes/)
@@ -205,6 +205,10 @@ Yes, YASR is 100% fully compatible with PHP 8
 == Changelog ==
 
 The full changelog can be found in the plugin's directory. Recent entries:
+
+= 3.1.0 =
+* TWEAKED: A lot of under the hood changes
+* TWEAKED: Updated Freemius sdk to version 2.4.4
 
 = 3.0.9 =
 * TWEAKED: code cleanup in gutenberg blocks
